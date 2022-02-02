@@ -15,4 +15,7 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Check Vars
-        run: echo "TEST_KEY=${{ secrets.TEST_KEY }}" >> $GITHUB_ENV
+        run: echo "TEST_KEY=${{ secrets.TEST_KEY }}"
+        
+      - name: Check Vars null
+        run: echo "TEST_KEY=${{ secrets.TEST_KEYSSSSSSSSS }}"
